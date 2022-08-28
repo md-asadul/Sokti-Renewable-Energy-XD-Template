@@ -1,0 +1,1 @@
+# Sokti-Renewable-Energy-XD-Template
