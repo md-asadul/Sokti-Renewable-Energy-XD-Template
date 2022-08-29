@@ -1,0 +1,42 @@
+@import "variable";
+@import "bootstrap.min.css";
+@import "header";
+@import "homepage";
+@import "post";
+@import "post-details";
+@import "about";
+@import "contact";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+p {
+  // font-family: $primaryFont;
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+body {
+  font-family: $primaryFont;
+  background: #fff;
+}
