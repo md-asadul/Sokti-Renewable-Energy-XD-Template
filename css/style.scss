@@ -1,4 +1,5 @@
-@import "variable";
+@import "variables";
+@import "mixins";
 @import "bootstrap.min.css";
 @import "header";
 @import "homepage";
@@ -30,16 +31,26 @@ h5 {
   margin-top: 0;
   margin-bottom: 0;
 }
+a {
+  color: $black;
+}
 p {
-  // font-family: $primaryFont;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: $black77;
   font-style: normal;
   margin-bottom: 0;
 }
-a {
-  color: $black;
+h1 {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: $white;
 }
 
 body {
   font-family: $primaryFont;
-  background: #fff;
+  background: $white;
 }

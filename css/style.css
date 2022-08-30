@@ -1,15 +1,37 @@
+/*
+ * small box shadow
+*/
+/*
+ * transition effects
+*/
+/*
+ * blue, gray, light-blue, yellow, red, green, white-gray , black, white
+*/
+/*
+ * global font style
+*/
+/*
+ * global image path
+*/
+/**
+ * custom scroll bar start
+ */
+/**
+ * word-break mixin start
+ */
 @import "bootstrap.min.css";
 /*============top-header-area start ============= */
 .top-header {
-  display: flex;
   width: 100%;
-  align-items: center;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .top-header-time {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  background: #000;
+  background: #1E1E2A;
   padding: 25px 76px 25px 168px;
 }
 .top-header-time p {
@@ -19,41 +41,40 @@
   font-weight: 400;
   color: #fff;
 }
-.top-header-social {
-  display: inline-flex;
+.top-header-nav {
+  display: flex;
   justify-content: flex-end;
   align-items: center;
   padding-right: 168px;
 }
-.top-header-social .top-nav {
+.top-header-nav .top-nav {
   display: flex;
 }
-.top-header-social .top-nav a {
+.top-header-nav .top-nav a {
   font-size: 18px;
   font-weight: 400;
   text-transform: capitalize;
-  text-decoration: none;
-  color: #1E1E2A;
+  color: #0D2918;
   margin-right: 30px;
 }
-.top-header-social .top-nav a:last-child {
+.top-header-nav .top-nav a:last-child {
   margin-right: 0;
 }
-.top-header-social .top-icon {
+.top-header-nav .top-icon {
   display: flex;
   margin-left: 87px;
 }
-.top-header-social .top-icon a {
+.top-header-nav .top-icon a {
   height: 35px;
   width: 35px;
   line-height: 35px;
   text-align: center;
   border: 1px solid #DFE9E3;
   border-radius: 50%;
-  color: #000;
+  color: #1E1E2A;
   margin-left: 10px;
 }
-.top-header-social .top-icon a svg {
+.top-header-nav .top-icon a svg {
   vertical-align: baseline !important;
 }
 
@@ -62,17 +83,18 @@
 .main-header {
   padding-left: 168px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   background: #FBFBFB;
 }
 .main-header .address {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
 }
 .main-header .address-item {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   margin-right: 28px;
 }
@@ -115,6 +137,7 @@
 }
 .main-header .contact {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 20px 43px 20px 55px;
   background: #32C36C;
@@ -142,7 +165,7 @@
 /*============ nav-area start ============= */
 .nav-area {
   padding: 0px 153px;
-  background-color: #000;
+  background-color: #1E1E2A;
 }
 .nav-area .menu ul {
   display: flex;
@@ -155,7 +178,7 @@
 }
 .nav-area .menu ul li a {
   display: inline-block;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -168,7 +191,7 @@
 .nav-area .contact-us a {
   padding: 13px 28px;
   background-color: #32C36C;
-  color: #FFFFFF;
+  color: #fff;
   border-radius: 5px;
   text-transform: uppercase;
   display: inline-block;
@@ -177,6 +200,37 @@
 }
 
 /*============ nav-area end ============= */
+/*============ sokti-banner-area Start ============= */
+.sokti-banner {
+  background: url("../images/bgimage.jpg") no-repeat center center/cover;
+  padding: 189px 0px 377px 0px;
+}
+.sokti-banner-title p {
+  color: #fff;
+  line-height: 26px;
+  margin: 17px 0 57px 0;
+}
+.sokti-banner-contact a {
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  text-transform: uppercase;
+  background: transparent;
+  color: #fff;
+  padding: 18px 30px;
+  margin-right: 29px;
+  border-radius: 3px;
+  border: 1px solid #fff;
+}
+.sokti-banner-contact a:hover {
+  background: #32C36C;
+  border: 1px solid #32C36C;
+}
+.sokti-banner-contact a:last-child {
+  margin-right: 0;
+}
+
+/*============ sokti-banner-area end ============= */
 * {
   margin: 0;
   padding: 0;
@@ -203,13 +257,25 @@ h5 {
   margin-bottom: 0;
 }
 
+a {
+  color: #1E1E2A;
+}
+
 p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #777777;
   font-style: normal;
   margin-bottom: 0;
 }
 
-a {
-  color: #1E1E2A;
+h1 {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 body {
