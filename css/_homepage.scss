@@ -33,3 +33,48 @@
     }
 }
 /*============ sokti-banner-area end ============= */
+/*============ Sokti about area Start ============= */
+.about {
+	border-radius: 10px;
+    .sokti-main-about-area{
+        border-radius: 10px 0px 0px 10px;
+        margin-top: -190px;
+        background: #FFFFFF;
+        -webkit-box-shadow: 2px 2px 3px 0px rgba(168,159,168,1);
+        -moz-box-shadow: 2px 2px 3px 0px rgba(168,159,168,1);
+        box-shadow: 2px 2px 3px -3px rgba(168,159,168,1);
+        overflow: hidden;
+        .about-image {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            position: relative;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .about-area {
+            padding: 76px 64px 76px 50px;
+            background-color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            &::after {
+                position: absolute;
+                content: "";
+                height: 200px;
+                width: 200px;
+                top: -125px;
+                right: -125px;
+                background: $primaryColor;
+                transform: rotate(45deg);
+            }
+            .about-content {
+                margin-top: 22px;
+                h4 {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+}
+/*============ Sokti about area end ============= */

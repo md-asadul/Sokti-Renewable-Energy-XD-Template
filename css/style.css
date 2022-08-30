@@ -231,16 +231,60 @@
 }
 
 /*============ sokti-banner-area end ============= */
+/*============ Sokti about area Start ============= */
+.about {
+  border-radius: 10px;
+}
+.about .sokti-main-about-area {
+  border-radius: 10px 0px 0px 10px;
+  margin-top: -190px;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 3px -3px rgb(168, 159, 168);
+  overflow: hidden;
+}
+.about .sokti-main-about-area .about-image {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+}
+.about .sokti-main-about-area .about-image img {
+  width: 100%;
+  height: auto;
+}
+.about .sokti-main-about-area .about-area {
+  padding: 76px 64px 76px 50px;
+  background-color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+}
+.about .sokti-main-about-area .about-area::after {
+  position: absolute;
+  content: "";
+  height: 200px;
+  width: 200px;
+  top: -125px;
+  right: -125px;
+  background: #32C36C;
+  transform: rotate(45deg);
+}
+.about .sokti-main-about-area .about-area .about-content {
+  margin-top: 22px;
+}
+.about .sokti-main-about-area .about-area .about-content h4 {
+  margin-bottom: 12px;
+}
+
+/*============ Sokti about area end ============= */
 .footer {
   background: #1E1E2A;
   color: #D4D9D6;
   padding-top: 107px;
 }
 .footer-logo p {
-  font-size: 16px;
-  font-weight: 400;
   padding: 32px 0px 24px 0px;
+  font-size: 16px;
   color: #D4D9D6;
+  font-weight: 400;
 }
 .footer-logo-social {
   display: flex;
@@ -264,11 +308,10 @@
   padding-top: 45px;
 }
 .footer-content h4 {
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
   text-transform: uppercase;
+  font-size: 20px;
   color: #fff;
+  font-weight: 700;
 }
 .footer-content-description {
   padding-top: 25px;
@@ -285,8 +328,8 @@
 }
 .footer-copyright p {
   font-size: 16px;
-  font-weight: 400;
   color: #fff;
+  font-weight: 400;
   border-top: 1px solid #54545D;
   padding: 35px 0px;
   margin: 0 auto;
@@ -318,6 +361,11 @@
   list-style: none;
   box-sizing: border-box;
   text-decoration: none !important;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fff;
 }
 
 img {
@@ -359,7 +407,47 @@ h1 {
   color: #fff;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  background: #fff;
+h2 {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.sokti-top-title h5 {
+  font-size: 14px;
+  color: #32C36C;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  position: relative;
+}
+.sokti-top-title h5::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+  background: #1E1E2A;
+}
+.sokti-top-title p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #777777;
 }/*# sourceMappingURL=style.css.map */

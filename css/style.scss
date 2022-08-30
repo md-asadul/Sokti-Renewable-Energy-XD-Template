@@ -16,6 +16,12 @@
   box-sizing: border-box;
   text-decoration: none !important;
 }
+
+body {
+  font-family: $primaryFont;
+  background: $white;
+}
+
 img {
   max-width: 100%;
 }
@@ -49,8 +55,42 @@ h1 {
   text-transform: uppercase;
   color: $white;
 }
-
-body {
-  font-family: $primaryFont;
-  background: $white;
+h2 {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.sokti-top-title {
+  h5 {
+    @include font_style (14px, $primaryColor, $bold, 19px, 3px);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 45px;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 10px;
+      background: $black;
+    }
+  }
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #777777;
+  }
 }

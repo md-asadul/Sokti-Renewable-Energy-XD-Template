@@ -4,10 +4,8 @@
 	padding-top: 107px;
     &-logo {
         p {
-            font-size: 16px;
-            font-weight: 400;
             padding: 32px 0px 24px 0px;
-            color: $whited6;
+            @include font_style (16px, $whited6, $regular);
         }
         &-social  {
             display: flex;
@@ -29,11 +27,8 @@
     &-content {
         padding-top: 45px;
         h4 {
-            font-size: 20px;
-            line-height: 26px;
-            font-weight: 700;
             text-transform: uppercase;
-            color: $white;
+            @include font_style (20px, $white, $bold);
         }
         &-description {
             padding-top: 25px;
@@ -49,9 +44,7 @@
         background: $black;
         padding-top: 60px;
         p {
-            font-size: 16px;
-            font-weight: 400;
-            color: $white;
+            @include font_style (16px, $white, $regular);
             border-top: 1px solid $black5d;
             padding: 35px 0px;
             margin: 0 auto;
