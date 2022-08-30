@@ -139,6 +139,44 @@
 }
 
 /*============ main-header-area end  ============= */
+/*============ nav-area start ============= */
+.nav-area {
+  padding: 0px 153px;
+  background-color: #000;
+}
+.nav-area .menu ul {
+  display: flex;
+}
+.nav-area .menu ul li {
+  padding-right: 32px;
+}
+.nav-area .menu ul li:last-child {
+  padding-right: 0;
+}
+.nav-area .menu ul li a {
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.nav-area .contact-us {
+  padding: 24px 0;
+}
+.nav-area .contact-us a {
+  padding: 13px 28px;
+  background-color: #32C36C;
+  color: #FFFFFF;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*============ nav-area end ============= */
 * {
   margin: 0;
   padding: 0;

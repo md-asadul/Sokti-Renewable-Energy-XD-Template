@@ -141,3 +141,42 @@
     }
 }
 /*============ main-header-area end  ============= */
+/*============ nav-area start ============= */
+.nav-area {
+    padding: 0px 153px;
+    background-color: #000;
+    .menu ul {
+        display: flex;
+        li {
+            padding-right: 32px;
+            &:last-child {
+                padding-right: 0;
+            }
+            a {
+                display: inline-block;
+                color: #FFFFFF;
+                font-size: 16px;
+                line-height: 21px;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-decoration: none;
+               
+            }
+        }
+    }
+    .contact-us {
+        padding: 24px 0;
+        a {
+            padding: 13px 28px;
+            background-color: $primaryColor;
+            color: #FFFFFF;
+            border-radius: 5px;
+            text-transform: uppercase;
+            display: inline-block;
+            // border: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
+/*============ nav-area end ============= */
