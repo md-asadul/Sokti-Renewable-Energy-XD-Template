@@ -235,29 +235,29 @@
 .about {
   border-radius: 10px;
 }
-.about .sokti-main-about-area {
+.about-content {
   border-radius: 10px 0px 0px 10px;
   margin-top: -190px;
-  background: #FFFFFF;
+  background: #fff;
   box-shadow: 2px 2px 3px -3px rgb(168, 159, 168);
   overflow: hidden;
 }
-.about .sokti-main-about-area .about-image {
+.about-content-image {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   position: relative;
 }
-.about .sokti-main-about-area .about-image img {
+.about-content-image img {
   width: 100%;
   height: auto;
 }
-.about .sokti-main-about-area .about-area {
+.about-content-text {
   padding: 76px 64px 76px 50px;
-  background-color: #FFFFFF;
+  background-color: #fff;
   position: relative;
   overflow: hidden;
 }
-.about .sokti-main-about-area .about-area::after {
+.about-content-text::after {
   position: absolute;
   content: "";
   height: 200px;
@@ -267,14 +267,69 @@
   background: #32C36C;
   transform: rotate(45deg);
 }
-.about .sokti-main-about-area .about-area .about-content {
+.about-content-text .about-mission {
   margin-top: 22px;
 }
-.about .sokti-main-about-area .about-area .about-content h4 {
+.about-content-text .about-mission h4 {
   margin-bottom: 12px;
 }
 
 /*============ Sokti about area end ============= */
+/*============ Provider area Start ============= */
+.provider-area {
+  padding: 123px 0 123px 0;
+}
+.provider-area .sokti-top-title p {
+  margin-top: 15px;
+}
+.provider-area .main-provider-are {
+  margin-top: 57px;
+  border-left: 4px solid #32C36C;
+}
+.provider-area .main-provider-are .provider-qa {
+  display: flex;
+  margin-bottom: 34px;
+}
+.provider-area .main-provider-are .provider-qa:last-child {
+  margin-bottom: 0;
+}
+.provider-area .main-provider-are .provider-qa .qa-image {
+  margin: 0 30px 0 25px;
+}
+.provider-area .main-provider-are .provider-qa .qa-area h4 {
+  margin-bottom: 14px;
+}
+.provider-area .industry-image-two {
+  padding-bottom: 20px;
+}
+.provider-area .happy-customer {
+  background: #32C36C;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  top: -72px;
+  right: -149px;
+  z-index: 9;
+  width: 200px;
+}
+.provider-area .happy-customer .border-area {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.provider-area .happy-customer .border-area h1 {
+  font-size: 48px;
+  line-height: 64px;
+}
+.provider-area .happy-customer .border-area p {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .footer {
   background: #1E1E2A;
   color: #D4D9D6;
@@ -449,5 +504,6 @@ h4 {
 .sokti-top-title p {
   font-size: 16px;
   font-weight: 500;
+  line-height: 26px;
   color: #777777;
 }/*# sourceMappingURL=style.css.map */

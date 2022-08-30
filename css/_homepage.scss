@@ -36,15 +36,15 @@
 /*============ Sokti about area Start ============= */
 .about {
 	border-radius: 10px;
-    .sokti-main-about-area{
+    &-content{
         border-radius: 10px 0px 0px 10px;
         margin-top: -190px;
-        background: #FFFFFF;
+        background: $white;
         -webkit-box-shadow: 2px 2px 3px 0px rgba(168,159,168,1);
         -moz-box-shadow: 2px 2px 3px 0px rgba(168,159,168,1);
         box-shadow: 2px 2px 3px -3px rgba(168,159,168,1);
         overflow: hidden;
-        .about-image {
+        &-image {
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
             position: relative;
@@ -53,9 +53,9 @@
                 height: auto;
             }
         }
-        .about-area {
+        &-text {
             padding: 76px 64px 76px 50px;
-            background-color: #FFFFFF;
+            background-color: $white;
             position: relative;
             overflow: hidden;
             &::after {
@@ -68,7 +68,7 @@
                 background: $primaryColor;
                 transform: rotate(45deg);
             }
-            .about-content {
+            .about-mission {
                 margin-top: 22px;
                 h4 {
                     margin-bottom: 12px;
@@ -78,3 +78,61 @@
     }
 }
 /*============ Sokti about area end ============= */
+/*============ Provider area Start ============= */
+.provider-area {
+	padding: 123px 0 123px 0;
+    .sokti-top-title {
+        p {
+            margin-top: 15px;
+        }
+    }
+    .main-provider-are {
+        margin-top: 57px;
+        border-left: 4px solid $primaryColor;
+        .provider-qa {
+            display: flex;
+            margin-bottom: 34px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .qa-image {
+                margin: 0 30px 0 25px;
+            }
+            .qa-area {
+                h4 {
+                    margin-bottom: 14px;
+                }
+            } 
+        }
+    }
+    .industry-image-two {
+        padding-bottom: 20px;
+    }
+    .happy-customer {
+        background: $primaryColor;
+        color: $white;
+        border-radius: 10px;
+        text-align: center;
+        padding: 15px;
+        position: relative;
+        top: -72px;
+        right: -149px;
+        z-index: 9;
+        width: 200px;
+        .border-area {
+            border: 2px solid $white;
+            border-radius: 10px;
+            padding: 10px;
+            h1 {
+                font-size: 48px;
+                line-height: 64px;
+            }
+            p {
+                font-size: 13px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: $white;
+            }
+        }
+    }
+}
