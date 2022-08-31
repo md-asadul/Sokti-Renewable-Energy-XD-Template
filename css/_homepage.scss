@@ -313,101 +313,169 @@
 }
 /*============ pricing area end ============= */
 /*============ project area start ============= */
-#project-area {
-	padding: 130px 0px 120px 0px;
-	position: relative;
-    .project-title {
-        margin-bottom: 66px;
+// #project-area {
+// 	padding: 130px 0px 120px 0px;
+// 	position: relative;
+//     .project-title {
+//         margin-bottom: 66px;
+//     }
+//     .test {
+//         position: relative;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         &:before {
+//             content: "";
+//             display: block;
+//             position: absolute;
+//             top: 16px;
+//             bottom: 16px;
+//             left: 16px;
+//             right: 16px;
+//             background: rgba(0, 0, 0, 0.5);
+//         }
+//         .image {
+//             width: 100%;
+//             height: 100%;
+//         }
+//         .text {
+//             font-family: 700;
+//             font-size: 70px;
+//             color: $white;
+//             text-shadow: 0.1em 0.1em 0.5em rgba(0,0,0,0.5);
+//             margin: 0;
+//             position: absolute;
+//         }
+//     }
+//     .project-images {
+//         position: relative;
+//         border-radius: 5%;
+//         .overlay {
+//             position: absolute;
+//             bottom: 0px;
+//             background: rgb(0, 0, 0);
+//             background: rgba('0,0,0,0.5');
+//             color: $white;
+//             width: 100%;
+//             font-size: 24px;
+//             font-weight: 700;
+//             padding: 10px;
+//             opacity: 0;
+//             transition: .5s ease;
+//         }
+//         &:hover .overlay {
+//             opacity: 1;
+//             border-radius: 0 0 10% 10%;
+//         }
+//         &::before {
+//             position: absolute;
+//             content: "";
+//             top: 0px;
+//             left: 0px;
+//             bottom: 0px;
+//             right: 0px;
+//             height: 100%;
+//             width: 100%;
+//             border-radius: 5%;
+//             background: rgba(0, 0, 0, 0.5);
+//         }
+//     }
+//     .owl-carousel .owl-nav button.owl-next {
+//         width: 45px;
+//         height: 45px;
+//         line-height: 45px;
+//         border-radius: 5px;
+//         border: 1px solid #E5E5E5;
+//         font-size: 35px;
+//         &:hover {
+//             color: $white;
+//             background: $primaryColor;
+//         }
+//     }
+//     .owl-carousel .owl-nav button.owl-prev {
+//         width: 45px;
+//         height: 45px;
+//         line-height: 45px;
+//         border-radius: 5px;
+//         border: 1px solid #E5E5E5;
+//         font-size: 35px;
+//         &:hover {
+//             color: $white;
+//             background: $primaryColor;
+//         }
+//     }
+//     .owl-theme .owl-nav {
+//         position: absolute;
+//         top: -204px;
+//         right: 99px;
+//     }
+// }
+/*============ project area end ============= */
+/*============ energy area star ============= */
+#energy-area {
+	padding: 120px 0;
+    .energy-producttion-img {
+        // position: relative;
     }
-    .test {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &:before {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 16px;
-            bottom: 16px;
-            left: 16px;
-            right: 16px;
-            background: rgba(0, 0, 0, 0.5);
-        }
-        .image {
-            width: 100%;
-            height: 100%;
-        }
-        .text {
-            font-family: 700;
-            font-size: 70px;
-            color: $white;
-            text-shadow: 0.1em 0.1em 0.5em rgba(0,0,0,0.5);
-            margin: 0;
-            position: absolute;
-        }
-    }
-    .project-images {
-        position: relative;
-        border-radius: 5%;
-        .overlay {
-            position: absolute;
-            bottom: 0px;
-            background: rgb(0, 0, 0);
-            background: rgba('0,0,0,0.5');
-            color: $white;
-            width: 100%;
-            font-size: 24px;
-            font-weight: 700;
-            padding: 10px;
-            opacity: 0;
-            transition: .5s ease;
-        }
-        &:hover .overlay {
-            opacity: 1;
-            border-radius: 0 0 10% 10%;
-        }
-        &::before {
-            position: absolute;
-            content: "";
-            top: 0px;
-            left: 0px;
-            bottom: 0px;
-            right: 0px;
-            height: 100%;
-            width: 100%;
-            border-radius: 5%;
-            background: rgba(0, 0, 0, 0.5);
-        }
-    }
-    .owl-carousel .owl-nav button.owl-next {
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        border-radius: 5px;
-        border: 1px solid #E5E5E5;
-        font-size: 35px;
-        &:hover {
-            color: $white;
+    .energy-producttion-icon {
+        margin-top: -73px;
+        margin-left: 246px;
+        // position: absolute;
+        // left: 0;
+        // bottom: 0;
+        i {
             background: $primaryColor;
-        }
-    }
-    .owl-carousel .owl-nav button.owl-prev {
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        border-radius: 5px;
-        border: 1px solid #E5E5E5;
-        font-size: 35px;
-        &:hover {
             color: $white;
-            background: $primaryColor;
+            height: 110px;
+            width: 110px;
+            line-height: 110px;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 100%;
+            cursor: pointer;
         }
     }
-    .owl-theme .owl-nav {
+    .energy-controlling {
+        padding-left: 45px;
+        .energy-controlling-content {
+            display: flex;
+            margin-bottom: 34px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .solar-panels {
+                h4 {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+        .solar-panels-title {
+            margin-top: 65px;
+        }
+        .energy-controlling-image {
+            padding-right: 30px;
+        }
+    }
+    .modal-dialog {
+        max-width: 900px;
+        .modal-body {
+            padding: 0;
+            video {
+                max-width: 100%;
+            }
+        }
+    }
+    .btn-modal-close {
         position: absolute;
-        top: -204px;
-        right: 99px;
+        top: -25px;
+        right: -25px;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        text-align: center;
+        cursor: pointer;
+        color: #32C36C;
+        background: $white;
     }
 }
-/*============ project area end ============= */
+/*============ energy area end ============= */

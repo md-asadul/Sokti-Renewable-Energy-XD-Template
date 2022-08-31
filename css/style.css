@@ -514,45 +514,68 @@
 
 /*============ pricing area end ============= */
 /*============ project area start ============= */
-#project-area {
-  padding: 130px 0px 120px 0px;
-  position: relative;
+/*============ project area end ============= */
+/*============ energy area star ============= */
+#energy-area {
+  padding: 120px 0;
 }
-#project-area .test {
-  position: relative;
+#energy-area .energy-producttion-icon {
+  margin-top: -73px;
+  margin-left: 246px;
+}
+#energy-area .energy-producttion-icon i {
+  background: #32C36C;
+  color: #fff;
+  height: 110px;
+  width: 110px;
+  line-height: 110px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+#energy-area .energy-controlling {
+  padding-left: 45px;
+}
+#energy-area .energy-controlling .energy-controlling-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 34px;
 }
-#project-area .test:before {
-  content: "";
-  display: block;
+#energy-area .energy-controlling .energy-controlling-content:last-child {
+  margin-bottom: 0;
+}
+#energy-area .energy-controlling .energy-controlling-content .solar-panels h4 {
+  margin-bottom: 12px;
+}
+#energy-area .energy-controlling .solar-panels-title {
+  margin-top: 65px;
+}
+#energy-area .energy-controlling .energy-controlling-image {
+  padding-right: 30px;
+}
+#energy-area .modal-dialog {
+  max-width: 900px;
+}
+#energy-area .modal-dialog .modal-body {
+  padding: 0;
+}
+#energy-area .modal-dialog .modal-body video {
+  max-width: 100%;
+}
+#energy-area .btn-modal-close {
   position: absolute;
-  top: 16px;
-  bottom: 16px;
-  left: 16px;
-  right: 16px;
-  /*width: 19em;
-  height: 19em;*/
-  background: rgba(0, 0, 0, 0.5);
-}
-#project-area .test .image {
-  width: 100%;
-  height: 100%;
-}
-#project-area .test .text {
-  font-family: 700;
-  font-size: 70px;
-  color: white;
-  text-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.5);
-  margin: 0;
-  position: absolute;
-}
-#project-area .project-images {
-  position: relative;
+  top: -25px;
+  right: -25px;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #32C36C;
+  background: #fff;
 }
 
-/*============ project area end ============= */
+/*============ energy area end ============= */
 .footer {
   background: #1E1E2A;
   color: #D4D9D6;
