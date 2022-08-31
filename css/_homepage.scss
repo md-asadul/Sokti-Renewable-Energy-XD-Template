@@ -80,12 +80,7 @@
 /*============ Sokti about area end ============= */
 /*============ Provider area Start ============= */
 .provider-area {
-	padding: 123px 0 123px 0;
-    .sokti-top-title {
-        p {
-            margin-top: 15px;
-        }
-    }
+	padding: 120px 0;
     .main-provider-are {
         margin-top: 57px;
         border-left: 4px solid $primaryColor;
@@ -136,3 +131,70 @@
         }
     }
 }
+/*============ Service area Start ============= */
+.service {
+    position: relative;
+    margin-bottom: 130px;
+    &::before {
+        position: absolute;
+        content: '';
+        left: 50%;
+        top: 0;
+        background: url('../images/bgimage01.jpg') no-repeat center center / cover;
+        height: 100%;
+        width: 50%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    &-item {
+        padding: 50px 40px 47px;
+        border-radius: 15px;
+        border: 1px solid $whited7;
+        background: $white;
+        &-title {
+            padding: 24px 0 20px 0;
+        }
+        &-content {
+            p {
+                font-weight: $regular;
+            }
+        }
+        .read-more {
+            margin-top: 19px;
+            a {
+                @include font_style (14px, $primaryColor, $bold, 19px);
+                text-transform: uppercase;
+                &:hover {
+                    color: $black77;
+                }
+            }
+        }
+    }
+    &-button {
+        a {
+            padding: 17px 30px;
+            border-radius: 5px;
+            background: $primaryColor;
+            display: inline-block;
+            text-transform: uppercase;
+            margin-top: 38px;
+            @include font_style (14px, $white, $medium, 19px);
+       }
+    }
+    /* =============Owl carousel area Start======== */
+    .owl-carousel {
+        margin-top: 67px;
+        margin-left: -10px;
+        .owl-item {
+            img{
+                width: auto !important;
+            }
+        }
+        .owl-stage {
+            margin: 0px 9px;
+            overflow: visible;
+       }
+    }
+   /* =============Owl carousel area End======== */ 
+}
+/*============ Service area End ============= */

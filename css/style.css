@@ -277,10 +277,7 @@
 /*============ Sokti about area end ============= */
 /*============ Provider area Start ============= */
 .provider-area {
-  padding: 123px 0 123px 0;
-}
-.provider-area .sokti-top-title p {
-  margin-top: 15px;
+  padding: 120px 0;
 }
 .provider-area .main-provider-are {
   margin-top: 57px;
@@ -330,6 +327,74 @@
   color: #fff;
 }
 
+/*============ Service area Start ============= */
+.service {
+  position: relative;
+  margin-bottom: 130px;
+  /* =============Owl carousel area Start======== */
+  /* =============Owl carousel area End======== */
+}
+.service::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 0;
+  background: url("../images/bgimage01.jpg") no-repeat center center/cover;
+  height: 100%;
+  width: 50%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.service-item {
+  padding: 50px 40px 47px;
+  border-radius: 15px;
+  border: 1px solid #EAEAEA;
+  background: #fff;
+}
+.service-item-title {
+  padding: 24px 0 20px 0;
+}
+.service-item-content p {
+  font-weight: 400;
+}
+.service-item .read-more {
+  margin-top: 19px;
+}
+.service-item .read-more a {
+  font-size: 14px;
+  color: #32C36C;
+  font-weight: 700;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+.service-item .read-more a:hover {
+  color: #777777;
+}
+.service-button a {
+  padding: 17px 30px;
+  border-radius: 5px;
+  background: #32C36C;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-top: 38px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 19px;
+}
+.service .owl-carousel {
+  margin-top: 67px;
+  margin-left: -10px;
+}
+.service .owl-carousel .owl-item img {
+  width: auto !important;
+}
+.service .owl-carousel .owl-stage {
+  margin: 0px 9px;
+  overflow: visible;
+}
+
+/*============ Service area End ============= */
 .footer {
   background: #1E1E2A;
   color: #D4D9D6;
@@ -502,8 +567,6 @@ h4 {
   background: #1E1E2A;
 }
 .sokti-top-title p {
-  font-size: 16px;
-  font-weight: 500;
   line-height: 26px;
-  color: #777777;
+  margin-top: 15px;
 }/*# sourceMappingURL=style.css.map */
