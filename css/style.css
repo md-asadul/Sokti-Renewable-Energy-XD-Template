@@ -330,7 +330,7 @@
 /*============ Service area Start ============= */
 .service {
   position: relative;
-  margin-bottom: 130px;
+  margin-bottom: 124px;
   /* =============Owl carousel area Start======== */
   /* =============Owl carousel area End======== */
 }
@@ -395,6 +395,124 @@
 }
 
 /*============ Service area End ============= */
+/*============ pricing area start ============= */
+.pricing-wrapper {
+  padding: 120px 0px;
+  background: #F6FFFA;
+  position: relative;
+  z-index: 0;
+}
+.pricing-wrapper .pricing-title {
+  text-align: center;
+}
+.pricing-wrapper .pricing-title h5 {
+  position: relative;
+}
+.pricing-wrapper .pricing-title h5::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -59px;
+  background-color: #1E1E2A;
+}
+.pricing-wrapper .pricing {
+  margin-top: 67px;
+}
+.pricing-wrapper .pricing-top {
+  background: #32C36C;
+  padding: 60px 20px 30px;
+  text-align: center;
+  border-radius: 15px 15px 0 0;
+}
+.pricing-wrapper .pricing-top h6 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding-top: 14px;
+}
+.pricing-wrapper .pricing-top p {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 19px;
+}
+.pricing-wrapper .pricing-top p .price {
+  font-size: 45px;
+  color: #fff;
+  font-weight: 900;
+  line-height: 59px;
+  padding-right: 10px;
+}
+.pricing-wrapper .pricing-top-icon {
+  background: #fff;
+  border-radius: 100%;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+  line-height: 110px;
+}
+.pricing-wrapper .pricing-content {
+  background: #fff;
+  padding: 40px 30px 60px;
+  border-radius: 0px 0px 15px 15px;
+  border: 1px solid #EAEAEA;
+}
+.pricing-wrapper .pricing-content ul li {
+  padding: 17px 0px;
+  border-bottom: 1px solid #E7E7E7;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #1E1E2A;
+  font-weight: 400;
+  line-height: 21px;
+}
+.pricing-wrapper .pricing-content ul li:first-child {
+  padding-top: 0;
+}
+.pricing-wrapper .pricing-content ul li:nth-child(4) {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.pricing-wrapper .pricing-content ul li .tick {
+  background: #32C36C;
+  color: #fff;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 12px;
+  margin-left: 45px;
+}
+.pricing-wrapper .pricing .pricing-button {
+  padding-top: 45px;
+  text-align: center;
+}
+.pricing-wrapper .pricing .pricing-button a {
+  background: #1E1E2A;
+  padding: 14px 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: 0.3s;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 19px;
+}
+.pricing-wrapper .pricing .pricing-button a:hover {
+  background: #32C36C;
+}
+
+/*============ pricing area end ============= */
 .footer {
   background: #1E1E2A;
   color: #D4D9D6;

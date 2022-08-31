@@ -134,7 +134,7 @@
 /*============ Service area Start ============= */
 .service {
     position: relative;
-    margin-bottom: 130px;
+    margin-bottom: 124px;
     &::before {
         position: absolute;
         content: '';
@@ -198,3 +198,117 @@
    /* =============Owl carousel area End======== */ 
 }
 /*============ Service area End ============= */
+/*============ pricing area start ============= */
+.pricing-wrapper {
+    padding: 120px 0px;
+    background: $white_fa;
+    position: relative;
+    z-index: 0;
+    // &::before {
+    //     position: absolute;
+    //     content: '';
+    //     right: 0;
+    //     top: 0;
+    //     background: url('../images/pricing-bg01.png') no-repeat center center / cover;
+    //     height: 85%;
+    //     width: 40%;
+    //     z-index: 0;
+    // }
+    .pricing-title {
+        text-align: center;	
+        h5 {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 45px;
+                height: 2px;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-left: -59px;
+                background-color: $black;   
+            }
+        }
+    }
+    .pricing {
+        margin-top: 67px;
+        &-top {
+            background: $primaryColor;
+            padding: 60px 20px 30px;
+            text-align: center;
+            border-radius: 15px 15px 0 0;
+            h6	{
+                @include font_style(18px, $white, $bold, 24px);
+                text-transform: uppercase;
+                padding-top: 14px;
+            }
+            p {
+                text-transform: uppercase;
+                @include font_style(14px, $white, $bold, 19px);
+                .price {
+                    @include font_style(45px, $white, $ex_black, 59px);
+                    padding-right: 10px;
+                }
+            }
+            &-icon {
+                background: $white;
+                border-radius: 100%;
+                width: 110px;
+                height: 110px;
+                margin: 0 auto;
+                line-height: 110px;
+            }
+        }
+        &-content {
+            background: $white;
+            padding: 40px 30px 60px;
+            border-radius: 0px 0px 15px 15px;
+            border: 1px solid $whited7;
+            ul {
+                li { 
+                    padding: 17px 0px;
+                    border-bottom: 1px solid $whitee7;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    @include font_style(16px, $black, $regular, 21px);
+                    &:first-child {
+                        padding-top: 0;
+                    }
+                    &:nth-child(4) {
+                        border-bottom:none;
+                        padding-bottom: 0;
+                    }
+                    .tick {
+                        background: $primaryColor;
+                        color: $white;
+                        height: 16px;
+                        width: 16px;
+                        line-height: 16px;
+                        text-align: center;
+                        border-radius: 50%;
+                        margin-right: 12px;
+                        margin-left: 45px;
+                    }
+                }
+            }
+        }
+        .pricing-button {
+            padding-top: 45px;
+            text-align: center;
+            a {
+                background: $black;
+                padding: 14px 30px;
+                border-radius: 5px;
+                text-transform: uppercase;
+                display: inline-block;
+                transition: .3s;
+                @include font_style(14px, $white, $medium, 19px);
+                &:hover {
+                    background: $primaryColor;
+                }
+            }
+        }
+    }
+}
+/*============ pricing area end ============= */
