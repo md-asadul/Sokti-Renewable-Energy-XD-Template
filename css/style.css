@@ -200,7 +200,7 @@
 }
 
 /*============ nav-area end ============= */
-/*============ sokti-banner-area Start ============= */
+/*============ sokti banner section start ============= */
 .sokti-banner {
   background: url("../images/bgimage.jpg") no-repeat center center/cover;
   padding: 189px 0px 377px 0px;
@@ -230,8 +230,8 @@
   margin-right: 0;
 }
 
-/*============ sokti-banner-area end ============= */
-/*============ Sokti about area Start ============= */
+/*============ sokti banner section end ============= */
+/*============ sokti about section sart ============= */
 .about {
   border-radius: 10px;
 }
@@ -274,8 +274,8 @@
   margin-bottom: 12px;
 }
 
-/*============ Sokti about area end ============= */
-/*============ Provider area Start ============= */
+/*============ sokti about section end ============= */
+/*============ provider section Start ============= */
 .provider-area {
   padding: 120px 0;
 }
@@ -327,7 +327,7 @@
   color: #fff;
 }
 
-/*============ Service area Start ============= */
+/*============ service section Start ============= */
 .service {
   position: relative;
   margin-bottom: 124px;
@@ -394,8 +394,8 @@
   overflow: visible;
 }
 
-/*============ Service area End ============= */
-/*============ pricing area start ============= */
+/*============ Service section End ============= */
+/*============ pricing section start ============= */
 .pricing-wrapper {
   padding: 120px 0px;
   background: #F6FFFA;
@@ -512,18 +512,18 @@
   background: #32C36C;
 }
 
-/*============ pricing area end ============= */
-/*============ project area start ============= */
-/*============ project area end ============= */
-/*============ energy area star ============= */
-#energy-area {
+/*============ pricing section end ============= */
+/*============ project section start ============= */
+/*============ project section end ============= */
+/*============ energy section star ============= */
+.energy {
   padding: 120px 0;
 }
-#energy-area .energy-producttion-icon {
+.energy-icon {
   margin-top: -73px;
   margin-left: 246px;
 }
-#energy-area .energy-producttion-icon i {
+.energy-icon i {
   background: #32C36C;
   color: #fff;
   height: 110px;
@@ -534,35 +534,35 @@
   border-radius: 100%;
   cursor: pointer;
 }
-#energy-area .energy-controlling {
+.energy-controlling {
   padding-left: 45px;
 }
-#energy-area .energy-controlling .energy-controlling-content {
+.energy-controlling-content {
   display: flex;
   margin-bottom: 34px;
 }
-#energy-area .energy-controlling .energy-controlling-content:last-child {
+.energy-controlling-content:last-child {
   margin-bottom: 0;
 }
-#energy-area .energy-controlling .energy-controlling-content .solar-panels h4 {
+.energy-controlling-content .solar-panels h4 {
   margin-bottom: 12px;
 }
-#energy-area .energy-controlling .solar-panels-title {
+.energy-controlling-title {
   margin-top: 65px;
 }
-#energy-area .energy-controlling .energy-controlling-image {
+.energy-controlling-image {
   padding-right: 30px;
 }
-#energy-area .modal-dialog {
+.energy .modal-dialog {
   max-width: 900px;
 }
-#energy-area .modal-dialog .modal-body {
+.energy .modal-dialog .modal-body {
   padding: 0;
 }
-#energy-area .modal-dialog .modal-body video {
+.energy .modal-dialog .modal-body video {
   max-width: 100%;
 }
-#energy-area .btn-modal-close {
+.energy .btn-modal-close {
   position: absolute;
   top: -25px;
   right: -25px;
@@ -575,7 +575,73 @@
   background: #fff;
 }
 
-/*============ energy area end ============= */
+/*============ energy section end ============= */
+/*============ team member section start ============= */
+.team {
+  padding: 120px 0px;
+  background: #F6FFFA;
+}
+.team-member-top {
+  text-align: center;
+}
+.team-member-top h5 {
+  position: relative;
+}
+.team-member-top h5::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -59px;
+  background: #1E1E2A;
+}
+.team-member {
+  padding-top: 60px;
+}
+.team-member-image {
+  position: relative;
+  height: 344px;
+  width: 100%;
+}
+.team-member-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team-member-image .member-bio-icon {
+  position: absolute;
+  left: 40px;
+  margin-top: -44px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #32C36C;
+  text-align: center;
+  color: #fff;
+  border-radius: 100%;
+}
+.team-member-content {
+  padding: 30px 40px 40px;
+  background: #fff;
+  border: 1px solid #EAEAEA;
+  border-radius: 0px 0px 15px 15px;
+}
+.team-member-content .member-name {
+  border-left: 2px solid #777777;
+  padding-left: 30px;
+}
+.team-member-content .member-name h3 {
+  text-transform: uppercase;
+}
+.team-member-content .member-name p {
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+
+/*============ team member section end ============= */
 .footer {
   background: #1E1E2A;
   color: #D4D9D6;

@@ -1,5 +1,5 @@
 
-/*============ sokti-banner-area Start ============= */
+/*============ sokti banner section start ============= */
 .sokti-banner {
     background: url("../images/bgimage.jpg")no-repeat center center / cover;
    padding: 189px 0px 377px 0px;
@@ -32,8 +32,8 @@
         }
     }
 }
-/*============ sokti-banner-area end ============= */
-/*============ Sokti about area Start ============= */
+/*============ sokti banner section end ============= */
+/*============ sokti about section sart ============= */
 .about {
 	border-radius: 10px;
     &-content{
@@ -77,8 +77,8 @@
         }
     }
 }
-/*============ Sokti about area end ============= */
-/*============ Provider area Start ============= */
+/*============ sokti about section end ============= */
+/*============ provider section Start ============= */
 .provider-area {
 	padding: 120px 0;
     .main-provider-are {
@@ -131,7 +131,7 @@
         }
     }
 }
-/*============ Service area Start ============= */
+/*============ service section Start ============= */
 .service {
     position: relative;
     margin-bottom: 124px;
@@ -197,8 +197,8 @@
     }
    /* =============Owl carousel area End======== */ 
 }
-/*============ Service area End ============= */
-/*============ pricing area start ============= */
+/*============ Service section End ============= */
+/*============ pricing section start ============= */
 .pricing-wrapper {
     padding: 120px 0px;
     background: $white_fa;
@@ -311,8 +311,8 @@
         }
     }
 }
-/*============ pricing area end ============= */
-/*============ project area start ============= */
+/*============ pricing section end ============= */
+/*============ project section start ============= */
 // #project-area {
 // 	padding: 130px 0px 120px 0px;
 // 	position: relative;
@@ -410,14 +410,14 @@
 //         right: 99px;
 //     }
 // }
-/*============ project area end ============= */
-/*============ energy area star ============= */
-#energy-area {
+/*============ project section end ============= */
+/*============ energy section star ============= */
+.energy {
 	padding: 120px 0;
-    .energy-producttion-img {
+    &-img {
         // position: relative;
     }
-    .energy-producttion-icon {
+    &-icon {
         margin-top: -73px;
         margin-left: 246px;
         // position: absolute;
@@ -435,9 +435,9 @@
             cursor: pointer;
         }
     }
-    .energy-controlling {
+    &-controlling {
         padding-left: 45px;
-        .energy-controlling-content {
+        &-content {
             display: flex;
             margin-bottom: 34px;
             &:last-child {
@@ -449,10 +449,10 @@
                 }
             }
         }
-        .solar-panels-title {
+        &-title {
             margin-top: 65px;
         }
-        .energy-controlling-image {
+        &-image {
             padding-right: 30px;
         }
     }
@@ -478,4 +478,69 @@
         background: $white;
     }
 }
-/*============ energy area end ============= */
+/*============ energy section end ============= */
+/*============ team member section start ============= */
+.team {
+	padding: 120px 0px;
+	background: $white_fa;
+    &-member-top {
+        text-align: center;
+        h5 {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 45px;
+                height: 2px;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-left: -59px;
+                background: $black;	
+            }
+        }
+    }
+    &-member {
+        padding-top: 60px;
+        &-image {
+            position: relative;
+            height: 344px;
+            width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .member-bio-icon {
+                position: absolute;
+                left: 40px;
+                margin-top: -44px;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                background: $primaryColor;
+                text-align: center;
+                color: $white;
+                border-radius: 100%; 
+            }
+        }
+        &-content {
+            padding: 30px 40px 40px;
+            background: $white;
+            border: 1px solid $whited7;
+            border-radius: 0px 0px 15px 15px;
+            .member-name {
+                border-left: 2px solid $black77;
+                padding-left: 30px;
+                h3 {
+                    text-transform: uppercase;
+                }
+                p {
+                   margin-top: 3px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    
+}
+/*============ team member section end ============= */
