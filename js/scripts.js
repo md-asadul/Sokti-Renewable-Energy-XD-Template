@@ -78,7 +78,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     
-  $(" #customer-feedback-area .owl-carousel").owlCarousel({
+  $(".customer .owl-carousel").owlCarousel({
       loop: true,
       dots: false,
       nav: true,

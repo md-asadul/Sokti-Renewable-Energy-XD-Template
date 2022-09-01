@@ -385,7 +385,7 @@
 //         height: 45px;
 //         line-height: 45px;
 //         border-radius: 5px;
-//         border: 1px solid #E5E5E5;
+//         border: 1px solid $whitee5;
 //         font-size: 35px;
 //         &:hover {
 //             color: $white;
@@ -397,7 +397,7 @@
 //         height: 45px;
 //         line-height: 45px;
 //         border-radius: 5px;
-//         border: 1px solid #E5E5E5;
+//         border: 1px solid $whitee5;
 //         font-size: 35px;
 //         &:hover {
 //             color: $white;
@@ -544,3 +544,164 @@
     
 }
 /*============ team member section end ============= */
+/*============ footprint section start ============= */
+.footprint {
+	position: relative;
+	margin-top: 120px;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        background: url('../images/footprint-img.jpg') no-repeat center center / cover ;
+        height: 73%;
+        width: 50%;
+        z-index: -1;
+    }
+    &-top {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        &-title {
+            flex-basis: 42%;
+            padding-top: 120px;
+            padding-bottom: 65px;
+            align-content: center;
+        }
+    }
+    &-item {
+        border: 1px solid $whited7;
+        padding: 30px;
+        border-radius: 15px;
+        background: $white;
+        z-index: 9999;
+        &-box {
+            text-align: center;
+            border: 1px solid $primaryColor;
+            border-radius: 10px;
+            padding: 50px 20px 46px;
+            .footprint-icon {
+                img {
+                    padding-bottom: 30px;
+                    border-bottom: 1px solid $primaryColor;
+                }
+            }
+            .footprint-description {
+                .count {
+                    padding-top: 24px;
+                    @include font_style(48px, $black, $ex_black, 64px);
+                }
+                p {
+                    line-height: 23px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+/*============ footprint section end ============= */
+/*============ customer feedback section start ============= */
+.customer {
+	padding: 110px 0px 120px;
+	position: relative;
+    &-item {
+        padding: 35px 20px 40px 30px;
+        border-radius: 15px;
+        border: 1px solid $whited7;
+        .customer-review {
+            @include font_style(16px, $black, $regular, 25px, null, italic);
+            margin-bottom: 33px;
+        }
+        &-profile {
+            display: flex;
+            align-items: center;
+            .customer-item-img {
+                position: relative;
+                .customer-image {
+                    margin-right: 27px;
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 100%;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .left-quotes-sign {
+                    position: absolute;
+                    bottom: 5px;
+                    right: 15%;
+                    height: 35px;
+                    width: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    background: $primaryColor;
+                    border-radius: 100%;
+                }
+            }
+            .customer-name {
+                border-left: 2px solid $whitee5;
+                padding-left: 15px;
+                h6 {
+                    @include font_style(16px, $black, $bold, 21px);
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                }
+                p {
+                    @include font_style(14px, null, $regular, 19px);
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+/* ============= customer feedback  owl carousel section start======== */
+ .owl-carousel {
+	margin-top: 65px;
+    .owl-nav {
+        button.owl-next {
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            border-radius: 5px;
+            border: 1px solid $whited7;
+            font-size: 35px;
+            &:hover {
+                color: $white;
+                background: $primaryColor;
+            }
+        }
+        button.owl-prev {
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            border-radius: 5px;
+            border: 1px solid $whited7;
+            font-size: 35px;
+            &:hover {
+                color: $white;
+                background: $primaryColor;
+            }
+        }
+    }
+    button:focus {
+        outline: none;
+    }
+    .owl-stage-outer {
+        width: 101%;
+        .owl-stage {
+            margin: 5px 2px;
+            overflow: visible;
+       }
+    }
+}
+ .owl-theme .owl-nav {
+    position: absolute;
+    top: -163px;
+    right: 0;
+}
+/* =============customer-feedback  .owl-carousel area */
+}
+/*============ customer feedback section end ============= */
