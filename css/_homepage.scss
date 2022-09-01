@@ -813,4 +813,16 @@
    /*============ news feed section owl-carousel area end ============= */
 }
 /*============ news feed section end ============= */
-
+/*============ map section start ============= */
+.map-title {
+	margin-top: -112px;
+    h6 {
+        text-align: center;
+        @include font_style (60px, $black, $medium, 80px);
+        margin-bottom: 98px;
+    }
+    span {
+        color: $primaryColor;
+    }
+}
+/*============ map section end ============= */
