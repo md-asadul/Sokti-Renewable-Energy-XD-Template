@@ -36,7 +36,6 @@ $(document).ready(function(){
 
 /*second owlCarousel area*/
 $(document).ready(function(){
-    
   $("#project-area .owl-carousel").owlCarousel({
       loop: true,
       dots: false,
@@ -71,9 +70,6 @@ $(document).ready(function(){
   // wow.init();
     
 });
-
-
-
 /* customer-feedback-area start*/
 
 $(document).ready(function(){
@@ -115,47 +111,47 @@ $(document).ready(function(){
 /* customer-feedback-area End */
 
 
-$(document).ready(function(){
+// $(document).ready(function(){
     
-  $(" #customer-feedback-area .owl-carousel").owlCarousel({
-      loop: true,
-      dots: false,
-      nav: true,
-      margin: 15,
-      slideSpeed: 1000,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      autoplayHoverPause: true,
-      resonsiveClass: true,
-      responsiveRefreshRate: true,
-      responsive: {
-          0 : {
-              items: 1
-          },
-          768 : {
-              items: 2
-          },
-          1000 : {
-              items: 3
-          },
-          1200 : {
-              items: 3
-          },
-          1920 : {
-              items: 4
-          }
-      }
-  });  
+//   $(" #customer-feedback-area .owl-carousel").owlCarousel({
+//       loop: true,
+//       dots: false,
+//       nav: true,
+//       margin: 15,
+//       slideSpeed: 1000,
+//       autoplay: true,
+//       autoplayTimeout: 3000,
+//       autoplayHoverPause: true,
+//       resonsiveClass: true,
+//       responsiveRefreshRate: true,
+//       responsive: {
+//           0 : {
+//               items: 1
+//           },
+//           768 : {
+//               items: 2
+//           },
+//           1000 : {
+//               items: 3
+//           },
+//           1200 : {
+//               items: 3
+//           },
+//           1920 : {
+//               items: 4
+//           }
+//       }
+//   });  
 
-  // wow = new WOW();
-  // wow.init();
+//   // wow = new WOW();
+//   // wow.init();
     
-});
+// });
 
 /*news-feed-area start*/
 $(document).ready(function(){
     
-  $(" #news-feed-area .owl-carousel").owlCarousel({
+  $(".news .owl-carousel").owlCarousel({
       loop: true,
       dots: false,
       nav: true,
