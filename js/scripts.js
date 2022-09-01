@@ -36,40 +36,41 @@ $(document).ready(function(){
 
 /*second owlCarousel area*/
 $(document).ready(function(){
-  $("#project-area .owl-carousel").owlCarousel({
-      loop: true,
-      dots: false,
-      margin: 15,
-      nav:true,
-      slideSpeed: 1000,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      autoplayHoverPause: true,
-      resonsiveClass: true,
-      responsiveRefreshRate: true,
-      responsive: {
-          0 : {
-              items: 1
-          },
-          768 : {
-              items: 2
-          },
-          1000 : {
-              items: 3
-          },
-          1200 : {
-              items: 4
-          },
-          1920 : {
-              items: 4
-          }
-      }
-  });  
-
-  // wow = new WOW();
-  // wow.init();
     
-});
+    $("#project-area .owl-carousel").owlCarousel({
+        loop: true,
+        dots: false,
+        margin: 15,
+        nav:true,
+        slideSpeed: 1000,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        resonsiveClass: true,
+        responsiveRefreshRate: true,
+        responsive: {
+            0 : {
+                items: 1
+            },
+            768 : {
+                items: 2
+            },
+            1000 : {
+                items: 3
+            },
+            1200 : {
+                items: 4
+            },
+            1920 : {
+                items: 4
+            }
+        }
+    });  
+  
+    // wow = new WOW();
+    // wow.init();
+      
+  });
 /* customer-feedback-area start*/
 
 $(document).ready(function(){

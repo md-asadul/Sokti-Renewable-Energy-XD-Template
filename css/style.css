@@ -200,7 +200,7 @@
 }
 
 /*============ nav-area end ============= */
-/*============ sokti banner section start ============= */
+/*============ banner section start ============= */
 .sokti-banner {
   background: url("../images/bgimage.jpg") no-repeat center center/cover;
   padding: 189px 0px 377px 0px;
@@ -230,8 +230,8 @@
   margin-right: 0;
 }
 
-/*============ sokti banner section end ============= */
-/*============ sokti about section sart ============= */
+/*============ banner section end ============= */
+/*============ about section start ============= */
 .about {
   border-radius: 10px;
 }
@@ -274,8 +274,8 @@
   margin-bottom: 12px;
 }
 
-/*============ sokti about section end ============= */
-/*============ provider section Start ============= */
+/*============ about section end ============= */
+/*============ provider section start ============= */
 .provider-area {
   padding: 120px 0;
 }
@@ -394,13 +394,33 @@
   overflow: visible;
 }
 
-/*============ Service section End ============= */
+/*============ service section end ============= */
 /*============ pricing section start ============= */
 .pricing-wrapper {
   padding: 120px 0px;
   background: #F6FFFA;
   position: relative;
   z-index: 0;
+}
+.pricing-wrapper::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: url("../images/pricing-bg01.png") no-repeat center center/cover;
+  height: 85%;
+  width: 40%;
+  z-index: -1;
+}
+.pricing-wrapper::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: url("../images/pricing-bg01.png") no-repeat center center/cover;
+  height: 85%;
+  width: 40%;
+  z-index: -1;
 }
 .pricing-wrapper .pricing-title {
   text-align: center;
@@ -515,7 +535,7 @@
 /*============ pricing section end ============= */
 /*============ project section start ============= */
 /*============ project section end ============= */
-/*============ energy section star ============= */
+/*============ energy section start ============= */
 .energy {
   padding: 120px 0;
 }
@@ -955,6 +975,255 @@
 }
 
 /*============ map section end ============= */
+/*============ banner section start ============= */
+.bg-banner {
+  background: url("../images/blog-bg.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 155px 0;
+}
+.bg-banner p {
+  font-weight: 400;
+  color: #fff;
+}
+.bg-banner svg {
+  margin: 0px 5px 0px 5px;
+}
+.bg-banner span {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/*============ banner section end ============= */
+/*============ blog post section start ============= */
+.blog {
+  padding-top: 130px;
+}
+.blog .blog-item {
+  margin-bottom: 80px;
+}
+.blog .blog-item-img {
+  height: 443px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.blog .blog-item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog .blog-item-author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.blog .blog-item-author .blog-date {
+  background: #32C36C;
+  text-align: center;
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: -44px;
+  margin-left: 25px;
+  margin-right: 10px;
+}
+.blog .blog-item-author .blog-date .day {
+  font-size: 41px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 41px;
+}
+.blog .blog-item-author .blog-date .month {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+}
+.blog .blog-item-author .admin {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.blog .blog-item-author .admin li {
+  font-size: 12px;
+  color: #777777;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.blog .blog-item-author .admin li svg {
+  margin-right: 10px;
+}
+.blog .blog-item-title {
+  margin: 33px 0 25px;
+}
+.blog .blog-item .blog-button a {
+  padding: 17px 30px;
+  border-radius: 5px;
+  background: #32C36C;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-top: 27px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+/*============ blog post section end ============= */
+/*============ pagination section start ============= */
+#pagination-area {
+  margin-bottom: 115px;
+  margin-top: -19px;
+}
+#pagination-area .page-item {
+  padding-right: 10px;
+}
+#pagination-area .page-item .page-link {
+  color: #777777;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #E9F0FE;
+  border-radius: 5px;
+}
+#pagination-area .page-item .page-link:hover {
+  color: #fff;
+  background: #32C36C;
+}
+#pagination-area .page-item .page-link:focus {
+  box-shadow: none;
+}
+
+/*============ pagination section end ============= */
+/*============ blog sidebar section start ============= */
+.blog-post-right-area {
+  margin-left: 39px;
+  /*============ categories area start ============= */
+  /*============ categories area end ============= */
+  /*============ recent post section start ============= */
+  /*============ recent post section end ============= */
+  /*============ news tag section start ============= */
+  /*============ news tag section end ============= */
+  /*============ offer service section start ============= */
+  /*============ offer service section end ============= */
+}
+.blog-post-right-area .title-border h4 {
+  position: relative;
+}
+.blog-post-right-area .title-border h4:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 4px;
+  background: #32C36C;
+  top: 40px;
+  margin-left: 0;
+}
+.blog-post-right-area .categories-area {
+  padding-bottom: 46px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.blog-post-right-area .categories-area h4 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 47px;
+}
+.blog-post-right-area .categories-area ul {
+  margin: 0;
+  padding: 0;
+}
+.blog-post-right-area .categories-area ul li {
+  padding-bottom: 15px;
+}
+.blog-post-right-area .categories-area ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #777777;
+}
+.blog-post-right-area .recent-post-area {
+  padding: 58px 0px 37px 0px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.blog-post-right-area .recent-post-area h4 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 52px;
+}
+.blog-post-right-area .recent-post-area .recent-img-text {
+  display: flex;
+  padding-bottom: 12px;
+}
+.blog-post-right-area .recent-post-area .recent-img-text .recent-area-text {
+  flex-basis: 75%;
+}
+.blog-post-right-area .recent-post-area .recent-img-text .recent-area-text h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.blog-post-right-area .recent-post-area .recent-img-text .recent-area-text p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+.blog-post-right-area .recent-post-area .recent-img-text .recent-area-img {
+  margin-right: 28px;
+  flex-basis: 25%;
+}
+.blog-post-right-area .news-tag-area {
+  padding: 58px 0px 32px 0px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.blog-post-right-area .news-tag-area h4 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 52px;
+}
+.blog-post-right-area .news-tag-area .news-tag a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  background: #000;
+  padding: 6px 15px 6px 15px;
+  border-radius: 5px;
+  margin: 0px 10px 10px 0px;
+}
+.blog-post-right-area .news-tag-area .news-tag a:hover {
+  background: #32C36C;
+}
+.blog-post-right-area .offer-service-area {
+  background: #000;
+  color: #fff;
+  padding: 27px;
+  margin-top: 48px;
+}
+.blog-post-right-area .offer-service-area .offer-area {
+  padding: 50px 25px;
+  border: 1px solid #32C36C;
+  text-align: center;
+}
+.blog-post-right-area .offer-service-area .offer-area span {
+  color: #32C36C;
+  font-size: 30px;
+  font-weight: 900;
+}
+.blog-post-right-area .offer-service-area .offer-area h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.blog-post-right-area .offer-service-area .offer-area h4 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*============ blog sidebar section end ============= */
 .footer {
   background: #1E1E2A;
   color: #D4D9D6;
