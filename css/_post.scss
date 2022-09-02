@@ -93,8 +93,8 @@
             border: 1px solid #E9F0FE;
             border-radius: 5px;
             &:hover {
-                color: #fff;
-                background: #32C36C;
+                color: $white;
+                background: $primaryColor;
             }
             &:focus{
                 box-shadow: none;
@@ -104,7 +104,7 @@
 }
 /*============ pagination section end ============= */
 /*============ blog sidebar section start ============= */
-.blog-post-right-area {
+.blog-post-sidebar {
 	margin-left: 39px;
     .title-border {
         h4 {
@@ -121,82 +121,72 @@
         }
     }
     /*============ categories area start ============= */
-    .categories-area {
-        padding-bottom: 46px;
-        border-bottom: 1px solid #E5E5E5;
-        h4 {
-            font-size: 20px;
-            font-weight: 700;
-            padding-bottom: 47px;
-        }
+    .categories {
+        padding-bottom: 45px;
+        border-bottom: 1px solid $whitee5;
         ul {
-            margin: 0;
-            padding: 0;
+            padding-top: 52px;
             li {
                 padding-bottom: 15px;
                 a {
-                    font-size: 16px;
-                    font-weight: 500;
-                    text-decoration: none;
-                    color: #777777;
+                    @include font_style(16px, $black77, $medium);
                 }
             }
         }
     }
     /*============ categories area end ============= */
     /*============ recent post section start ============= */
-    .recent-post-area {
-        padding: 58px 0px 37px 0px;
-        border-bottom: 1px solid #E5E5E5;
+    .recent-post {
+        padding: 50px 0px 37px 0px;
+        border-bottom: 1px solid $whitee5;
         h4{
-            font-size: 20px;
-            font-weight: 700;
             padding-bottom: 52px;
         }
-        .recent-img-text {
+        .recent-post-item {
             display: flex;
-            padding-bottom: 12px;
-            .recent-area-text {
-                flex-basis: 75%;
-                h5 {
-                    font-size: 16px;
-                    font-weight: 700;
-                }
-                p {
-                    font-size: 14px;
-                    font-weight: 400;
-                    color: #777777;
+            padding-bottom: 29px;
+            .recent-post-img {
+                flex-basis: 26%;
+                width: 76px;
+                border-radius: 8px;
+                overflow: hidden;
+                img {
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
-            .recent-area-img {
-                margin-right: 28px;
-                flex-basis: 25%;
+            .recent-post-content {
+                flex-basis: 74%;
+                margin-left: 27px;
+                h6 {
+                    @include font_style(16px, $black, $bold, 22px);
+                }
+                p {
+                    @include font_style(14px, $black77, $regular, 19px);
+                    margin-top: 5px;
+                }
             }
         }
     }
     /*============ recent post section end ============= */
     /*============ news tag section start ============= */
     .news-tag-area {
-        padding: 58px 0px 32px 0px;
-        border-bottom: 1px solid #E5E5E5;
+        padding: 58px 0px 40px;
+        border-bottom: 1px solid $whitee5;
         h4{
-            font-size: 20px;
-            font-weight: 700;
             padding-bottom: 52px;
         }
         .news-tag {
             a {
                 display: inline-block;
-                text-decoration: none;
-                color: #fff;
-                font-size: 12px;
-                font-weight: 700;
-                background: #000;
-                padding: 6px 15px 6px 15px;
+                @include font_style(12px, $white, $bold, 22px);
+                background: $black;
+                padding: 6px 14px;
                 border-radius: 5px;
                 margin: 0px 10px 10px 0px;
+                transition: .3s;
                 &:hover {
-                    background: #32C36C;
+                    background: $primaryColor;
                 }
             }
         }
@@ -204,26 +194,21 @@
     /*============ news tag section end ============= */
     /*============ offer service section start ============= */
     .offer-service-area {
-        background: #000;
-        color: #fff;
+        background: $black;
+        color: $white;
         padding: 27px;
-        margin-top: 48px;
+        margin-top: 46px;
         .offer-area {
             padding: 50px 25px;
-            border: 1px solid #32C36C;
+            border: 1px solid $primaryColor;
             text-align: center;
             span {
-                color: $primaryColor;
-                font-size: 30px;
-                font-weight: 900;
+                @include font_style(30px, $primaryColor, $ex_black);
             }
             h2 {
-                font-size: 48px;
-                font-weight: 700;
+                @include font_style(48px, $white, $bold, 63px);
             }
             h4 {
-                font-size: 20px;
-                font-weight: 700;
                 text-transform: uppercase;
             }
         }

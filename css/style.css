@@ -1100,7 +1100,7 @@
 
 /*============ pagination section end ============= */
 /*============ blog sidebar section start ============= */
-.blog-post-right-area {
+.blog-post-sidebar {
   margin-left: 39px;
   /*============ categories area start ============= */
   /*============ categories area end ============= */
@@ -1111,10 +1111,10 @@
   /*============ offer service section start ============= */
   /*============ offer service section end ============= */
 }
-.blog-post-right-area .title-border h4 {
+.blog-post-sidebar .title-border h4 {
   position: relative;
 }
-.blog-post-right-area .title-border h4:before {
+.blog-post-sidebar .title-border h4:before {
   position: absolute;
   content: "";
   width: 20px;
@@ -1123,103 +1123,105 @@
   top: 40px;
   margin-left: 0;
 }
-.blog-post-right-area .categories-area {
-  padding-bottom: 46px;
+.blog-post-sidebar .categories {
+  padding-bottom: 45px;
   border-bottom: 1px solid #E5E5E5;
 }
-.blog-post-right-area .categories-area h4 {
-  font-size: 20px;
-  font-weight: 700;
-  padding-bottom: 47px;
+.blog-post-sidebar .categories ul {
+  padding-top: 52px;
 }
-.blog-post-right-area .categories-area ul {
-  margin: 0;
-  padding: 0;
-}
-.blog-post-right-area .categories-area ul li {
+.blog-post-sidebar .categories ul li {
   padding-bottom: 15px;
 }
-.blog-post-right-area .categories-area ul li a {
+.blog-post-sidebar .categories ul li a {
   font-size: 16px;
+  color: #777777;
   font-weight: 500;
-  text-decoration: none;
-  color: #777777;
 }
-.blog-post-right-area .recent-post-area {
-  padding: 58px 0px 37px 0px;
+.blog-post-sidebar .recent-post {
+  padding: 50px 0px 37px 0px;
   border-bottom: 1px solid #E5E5E5;
 }
-.blog-post-right-area .recent-post-area h4 {
-  font-size: 20px;
-  font-weight: 700;
+.blog-post-sidebar .recent-post h4 {
   padding-bottom: 52px;
 }
-.blog-post-right-area .recent-post-area .recent-img-text {
+.blog-post-sidebar .recent-post .recent-post-item {
   display: flex;
-  padding-bottom: 12px;
+  padding-bottom: 29px;
 }
-.blog-post-right-area .recent-post-area .recent-img-text .recent-area-text {
-  flex-basis: 75%;
+.blog-post-sidebar .recent-post .recent-post-item .recent-post-img {
+  flex-basis: 26%;
+  width: 76px;
+  border-radius: 8px;
+  overflow: hidden;
 }
-.blog-post-right-area .recent-post-area .recent-img-text .recent-area-text h5 {
+.blog-post-sidebar .recent-post .recent-post-item .recent-post-img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-post-sidebar .recent-post .recent-post-item .recent-post-content {
+  flex-basis: 74%;
+  margin-left: 27px;
+}
+.blog-post-sidebar .recent-post .recent-post-item .recent-post-content h6 {
   font-size: 16px;
+  color: #1E1E2A;
   font-weight: 700;
+  line-height: 22px;
 }
-.blog-post-right-area .recent-post-area .recent-img-text .recent-area-text p {
+.blog-post-sidebar .recent-post .recent-post-item .recent-post-content p {
   font-size: 14px;
-  font-weight: 400;
   color: #777777;
+  font-weight: 400;
+  line-height: 19px;
+  margin-top: 5px;
 }
-.blog-post-right-area .recent-post-area .recent-img-text .recent-area-img {
-  margin-right: 28px;
-  flex-basis: 25%;
-}
-.blog-post-right-area .news-tag-area {
-  padding: 58px 0px 32px 0px;
+.blog-post-sidebar .news-tag-area {
+  padding: 58px 0px 40px;
   border-bottom: 1px solid #E5E5E5;
 }
-.blog-post-right-area .news-tag-area h4 {
-  font-size: 20px;
-  font-weight: 700;
+.blog-post-sidebar .news-tag-area h4 {
   padding-bottom: 52px;
 }
-.blog-post-right-area .news-tag-area .news-tag a {
+.blog-post-sidebar .news-tag-area .news-tag a {
   display: inline-block;
-  text-decoration: none;
-  color: #fff;
   font-size: 12px;
+  color: #fff;
   font-weight: 700;
-  background: #000;
-  padding: 6px 15px 6px 15px;
+  line-height: 22px;
+  background: #1E1E2A;
+  padding: 6px 14px;
   border-radius: 5px;
   margin: 0px 10px 10px 0px;
+  transition: 0.3s;
 }
-.blog-post-right-area .news-tag-area .news-tag a:hover {
+.blog-post-sidebar .news-tag-area .news-tag a:hover {
   background: #32C36C;
 }
-.blog-post-right-area .offer-service-area {
-  background: #000;
+.blog-post-sidebar .offer-service-area {
+  background: #1E1E2A;
   color: #fff;
   padding: 27px;
-  margin-top: 48px;
+  margin-top: 46px;
 }
-.blog-post-right-area .offer-service-area .offer-area {
+.blog-post-sidebar .offer-service-area .offer-area {
   padding: 50px 25px;
   border: 1px solid #32C36C;
   text-align: center;
 }
-.blog-post-right-area .offer-service-area .offer-area span {
-  color: #32C36C;
+.blog-post-sidebar .offer-service-area .offer-area span {
   font-size: 30px;
+  color: #32C36C;
   font-weight: 900;
 }
-.blog-post-right-area .offer-service-area .offer-area h2 {
+.blog-post-sidebar .offer-service-area .offer-area h2 {
   font-size: 48px;
+  color: #fff;
   font-weight: 700;
+  line-height: 63px;
 }
-.blog-post-right-area .offer-service-area .offer-area h4 {
-  font-size: 20px;
-  font-weight: 700;
+.blog-post-sidebar .offer-service-area .offer-area h4 {
   text-transform: uppercase;
 }
 
@@ -1326,16 +1328,6 @@ ul {
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 a {
   color: #1E1E2A;
 }
@@ -1346,6 +1338,16 @@ p {
   line-height: 28px;
   color: #777777;
   font-style: normal;
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
