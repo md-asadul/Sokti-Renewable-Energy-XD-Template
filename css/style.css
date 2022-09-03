@@ -35,11 +35,10 @@
   padding: 25px 76px 25px 168px;
 }
 .top-header-time p {
-  margin-bottom: 0;
   margin-left: 10px;
   font-size: 18px;
-  font-weight: 400;
   color: #fff;
+  font-weight: 400;
 }
 .top-header-nav {
   display: flex;
@@ -52,9 +51,9 @@
 }
 .top-header-nav .top-nav a {
   font-size: 18px;
+  color: #0D2918;
   font-weight: 400;
   text-transform: capitalize;
-  color: #0D2918;
   margin-right: 30px;
 }
 .top-header-nav .top-nav a:last-child {
@@ -98,7 +97,7 @@
   align-items: center;
   margin-right: 28px;
 }
-.main-header .address-item :last-child {
+.main-header .address-item:last-child {
   margin-right: 0;
 }
 .main-header .address-item-icon {
@@ -123,17 +122,17 @@
 }
 .main-header .address-item-content label {
   font-size: 18px;
+  color: #777777;
   font-weight: 500;
   line-height: 24px;
-  color: #777777;
   text-transform: uppercase;
   opacity: 63%;
 }
 .main-header .address-item-content h5 {
   font-size: 21px;
   color: #1E1E2A;
-  line-height: 28px;
   font-weight: 700;
+  line-height: 28px;
 }
 .main-header .contact {
   display: flex;
@@ -200,6 +199,62 @@
 }
 
 /*============ nav-area end ============= */
+@media (max-width: 1600px) {
+  .top-header-time {
+    padding-left: 113px;
+  }
+  .top-header-nav {
+    padding-right: 113px;
+  }
+  .main-header {
+    padding-left: 113px;
+  }
+  .main-header .address-item-content label {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .main-header .address-item-content h5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .main-header .contact {
+    padding: 20px 23px 20px 35px;
+  }
+  .main-header .contact label {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .main-header .contact h5 {
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .main-header .contact .contact-icon {
+    height: 70px;
+    width: 70px;
+    margin-left: 22px;
+  }
+  .main-header .contact .contact-icon svg {
+    height: 70px;
+    width: 70px;
+  }
+  .nav-area {
+    padding: 0px 98px;
+  }
+}
+@media (max-width: 1366px) {
+  .top-header-time {
+    padding-left: 113px;
+  }
+  .top-header-nav {
+    padding-right: 113px;
+  }
+  .main-header {
+    padding-left: 113px;
+  }
+  .nav-area {
+    padding: 0px 98px;
+  }
+}
 /*============ banner section start ============= */
 .sokti-banner {
   background: url("../images/bgimage.jpg") no-repeat center center/cover;
@@ -537,7 +592,7 @@
 /*============ pricing section end ============= */
 /*============ project section start ============= */
 #project-area {
-  padding: 130px -12px 120px;
+  padding-top: 130px;
 }
 #project-area .project-done {
   background: url(../images/energy01.jpg) no-repeat center center/cover;
@@ -903,6 +958,12 @@
 .customer .owl-carousel {
   margin-top: 65px;
 }
+.customer .owl-carousel .owl-nav {
+  position: absolute;
+  top: -167px;
+  right: 0;
+  margin-top: 0px;
+}
 .customer .owl-carousel .owl-nav button.owl-next {
   width: 45px;
   height: 45px;
@@ -936,11 +997,6 @@
 .customer .owl-carousel .owl-stage-outer .owl-stage {
   margin: 5px 2px;
   overflow: visible;
-}
-.customer .owl-theme .owl-nav {
-  position: absolute;
-  top: -163px;
-  right: 0;
 }
 
 /*============ customer feedback section end ============= */
@@ -1033,6 +1089,12 @@
 .news .owl-carousel {
   margin-top: 67px;
 }
+.news .owl-carousel .owl-nav {
+  position: absolute;
+  top: -170px;
+  right: -6px;
+  margin-top: 0;
+}
 .news .owl-carousel .owl-nav button.owl-next {
   width: 45px;
   height: 45px;
@@ -1059,11 +1121,6 @@
 }
 .news button:focus {
   outline: none;
-}
-.news .owl-theme .owl-nav {
-  position: absolute;
-  top: -146px;
-  right: -6px;
 }
 .news .owl-stage {
   margin: 5px 2px;

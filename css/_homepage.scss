@@ -326,7 +326,7 @@
 /*============ pricing section end ============= */
 /*============ project section start ============= */
 #project-area {
-	padding: 130px -12px 120px;
+	padding-top: 130px;
     .project-done {
         background: url(../images/energy01.jpg) no-repeat center center / cover ;
         .project-wrapper {
@@ -679,6 +679,10 @@
  .owl-carousel {
 	margin-top: 65px;
     .owl-nav {
+        position: absolute;
+        top: -167px;
+        right: 0;
+        margin-top: 0px;
         button.owl-next {
             width: 45px;
             height: 45px;
@@ -714,11 +718,6 @@
             overflow: visible;
        }
     }
-}
- .owl-theme .owl-nav {
-    position: absolute;
-    top: -163px;
-    right: 0;
 }
 /* =============customer-feedback  .owl-carousel area */
 }
@@ -792,6 +791,10 @@
     .owl-carousel {
         margin-top: 67px;
         .owl-nav {
+            position: absolute;
+            top: -170px;
+            right: -6px;
+            margin-top: 0;
             button.owl-next {
                 width: 45px;
                 height: 45px;
@@ -820,11 +823,6 @@
     }
     button:focus {
         outline: none;
-    }
-    .owl-theme .owl-nav {
-        position: absolute;
-        top: -146px;
-        right: -6px;
     }
     .owl-stage {
         margin: 5px 2px;
