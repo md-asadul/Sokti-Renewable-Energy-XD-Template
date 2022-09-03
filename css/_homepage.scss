@@ -135,6 +135,7 @@
 .service {
     position: relative;
     margin-bottom: 124px;
+    overflow: hidden;
     &::before {
         position: absolute;
         content: '';
@@ -185,6 +186,7 @@
     .owl-carousel {
         margin-top: 67px;
         margin-left: -10px;
+        width: 120%;
         .owl-item {
             img{
                 width: auto !important;
@@ -323,9 +325,111 @@
 }
 /*============ pricing section end ============= */
 /*============ project section start ============= */
-
-
-
+#project-area {
+	padding: 130px -12px 120px;
+    .project-done {
+        background: url(../images/energy01.jpg) no-repeat center center / cover ;
+        .project-wrapper {
+            padding: 40px;
+            .content {
+                background: rgba($black, 0.8);
+                padding: 40px;
+                text-align: center;
+                .content-wrapper {
+                    padding: 20px;
+                    border: 1px solid $white;
+                }
+                .text {
+                    @include font_style(107px, $white, $bold, 143px);
+                    padding-top: 272px;
+                }
+                h3 {
+                    color: $primaryColor;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                }
+                a {
+                    padding: 17px 30px;
+                    border-radius: 5px;
+                    background: $primaryColor;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    margin: 77px 0 42px;
+                    @include font_style (18px, $white, $bold, 24px);
+               }
+            }
+        }
+    }
+    .item {
+        height: 544px;
+        overflow: hidden;
+        border-radius: 15px;
+        position: relative;
+        transition: .3s;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            background: rgba($black, 0.8);
+            .overlay-content {
+                padding: 50px;
+                h3 {
+                    color: $white;
+                }
+                p {
+                    color: $primaryColor;
+                }
+            }
+        }
+        &:hover {
+            .overlay {
+                opacity: 1; 
+            }
+        }
+    }
+    .owl-carousel {
+        margin-top: 67px;
+        .owl-nav {
+            position: absolute;
+            top: -210px;
+            right: 99px;
+            margin-top: 0;
+            button.owl-next {
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                border-radius: 5px;
+                border: 1px solid $whitee5;
+                font-size: 35px;
+                &:hover {
+                    color: $white;
+                    background: $primaryColor;
+                }
+            }
+            button.owl-prev {
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                border-radius: 5px;
+                border: 1px solid $whitee5;
+                font-size: 35px;
+                &:hover {
+                    color: $white;
+                    background: $primaryColor;
+                }
+            }
+        }
+    }
+    button:focus {
+        outline: none;
+    }
+}
 /*============ project section end ============= */
 /*============ energy section start ============= */
 .energy {
