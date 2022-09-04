@@ -39,6 +39,9 @@ p {
   color: $black77;
   font-style: normal;
   margin-bottom: 0;
+  @media (max-width: 991px) { 
+    line-height: 24px;
+  }
 }
 h1,
 h2,
@@ -55,22 +58,38 @@ h1 {
   line-height: 80px;
   text-transform: uppercase;
   color: $white;
+  @media (max-width: 991px) { 
+    font-size: 30px;
+    line-height: 50px;
+  }
 }
 h2 {
   font-size: 30px;
   font-weight: 900;
   line-height: 39px;
   text-transform: uppercase;
+  @media (max-width: 991px) { 
+    font-size: 20px;
+    line-height: 29px;
+  }
 }
 h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
+  @media (max-width: 991px) { 
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 h4 {
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
+  @media (max-width: 991px) { 
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 .sokti-top-title {
   h5 {
@@ -92,5 +111,10 @@ h4 {
   p {
     line-height: 26px;
     margin-top: 15px;
+  }
+  @media (max-width: 991px) { 
+    p {
+      line-height: 24px;
+    }
   }
 }

@@ -284,6 +284,13 @@
 .sokti-banner-contact a:last-child {
   margin-right: 0;
 }
+@media (max-width: 420px) {
+  .sokti-banner-contact a {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
 
 /*============ banner section end ============= */
 /*============ about section start ============= */
@@ -364,7 +371,6 @@
   top: -72px;
   right: -149px;
   z-index: 9;
-  width: 200px;
 }
 .provider-area .happy-customer .border-area {
   border: 2px solid #fff;
@@ -376,10 +382,10 @@
   line-height: 64px;
 }
 .provider-area .happy-customer .border-area p {
-  font-size: 13px;
-  font-weight: 500;
   text-transform: uppercase;
+  font-size: 13px;
   color: #fff;
+  font-weight: 500;
 }
 
 /*============ service section Start ============= */
@@ -400,6 +406,11 @@
   width: 50%;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+}
+@media (max-width: 767px) {
+  .service::before {
+    display: none;
+  }
 }
 .service-item {
   padding: 50px 40px 47px;
@@ -449,6 +460,15 @@
 .service .owl-carousel .owl-stage {
   margin: 0px 9px;
   overflow: visible;
+}
+@media (max-width: 767px) {
+  .service .owl-carousel {
+    width: 100%;
+    margin-left: 0;
+  }
+  .service .owl-carousel .owl-stage {
+    margin: 0px 0px !important;
+  }
 }
 
 /*============ service section end ============= */
@@ -741,13 +761,27 @@
 .energy-controlling-image {
   padding-right: 30px;
 }
+@media (max-width: 767px) {
+  .energy-controlling {
+    margin-top: 30px;
+    padding-left: 0;
+  }
+}
 .energy .modal-dialog {
   max-width: 900px;
+  margin-top: 30px;
 }
-.energy .modal-dialog .modal-body {
+.energy .modal-dialog .modal-content {
+  background-color: transparent;
+  border: none;
+}
+.energy .modal-dialog .modal-content .modal-body {
   padding: 0;
 }
-.energy .modal-dialog .modal-body video {
+.energy .modal-dialog .modal-content .modal-body video {
+  height: 100%;
+}
+.energy .modal-dialog .modal-content .modal-body video .iframe {
   max-width: 100%;
 }
 .energy .btn-modal-close {
@@ -1058,6 +1092,12 @@
   font-weight: 700;
   line-height: 41px;
 }
+@media (max-width: 1200px) {
+  .news-item-author .blog-date .day {
+    font-size: 30px;
+    line-height: 31px;
+  }
+}
 .news-item-author .blog-date .month {
   font-size: 18px;
   color: #fff;
@@ -1145,6 +1185,86 @@
 }
 
 /*============ map section end ============= */
+@media (max-width: 991px) {
+  .provider-area .happy-customer .border-area h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .provider-area .happy-customer .border-area p {
+    line-height: 18px;
+  }
+  .pricing-wrapper .pricing-top .price {
+    font-size: 30px !important;
+    line-height: 49px !important;
+  }
+  .pricing-wrapper .pricing-top h6 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .pricing-wrapper .tick {
+    margin-left: 20px !important;
+  }
+  .team .team-member-content {
+    padding: 30px 30px 40px;
+  }
+  .team .team-member-content .member-name {
+    padding-left: 20px;
+  }
+  .footprint .footprint-item {
+    padding: 20px;
+  }
+  .footprint .footprint-item .footprint-item-box {
+    padding: 50px 15px 46px;
+  }
+  .footprint .footprint-item .footprint-item-box .count {
+    font-size: 35px !important;
+    line-height: 48px !important;
+  }
+  .map-title h6 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .provider-area img {
+    width: 100% !important;
+  }
+  .provider-area .industry-image {
+    margin-top: 30px;
+  }
+  .provider-area .industry-image .industry-image-one {
+    display: none;
+  }
+  .provider-area .industry-image .happy-customer {
+    top: 0;
+    right: 0;
+    margin-bottom: 20px;
+  }
+  .pricing-wrapper .pricing-content ul li {
+    justify-content: center;
+  }
+  .energy-img img {
+    width: 100%;
+  }
+  .energy .btn-modal-close {
+    top: -25px;
+    right: 0;
+  }
+  .footprint::before {
+    display: none;
+  }
+  .footprint .footprint-top-title {
+    flex-basis: 100%;
+    padding-top: 0;
+  }
+  .footprint .footprint-item {
+    margin-bottom: 30px;
+  }
+  .footprint .footprint-item:last-child {
+    margin-bottom: 0;
+  }
+}
 /*============ banner section start ============= */
 .bg-banner {
   background: url("../images/blog-bg.jpg") no-repeat center center/cover;
@@ -1885,6 +2005,11 @@ p {
   font-style: normal;
   margin-bottom: 0;
 }
+@media (max-width: 991px) {
+  p {
+    line-height: 24px;
+  }
+}
 
 h1,
 h2,
@@ -1903,6 +2028,12 @@ h1 {
   text-transform: uppercase;
   color: #fff;
 }
+@media (max-width: 991px) {
+  h1 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
 
 h2 {
   font-size: 30px;
@@ -1910,17 +2041,35 @@ h2 {
   line-height: 39px;
   text-transform: uppercase;
 }
+@media (max-width: 991px) {
+  h2 {
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
 
 h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
 }
+@media (max-width: 991px) {
+  h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
 
 h4 {
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
+}
+@media (max-width: 991px) {
+  h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .sokti-top-title h5 {
@@ -1946,4 +2095,9 @@ h4 {
 .sokti-top-title p {
   line-height: 26px;
   margin-top: 15px;
+}
+@media (max-width: 991px) {
+  .sokti-top-title p {
+    line-height: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */
