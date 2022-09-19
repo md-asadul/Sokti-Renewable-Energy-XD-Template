@@ -248,11 +248,28 @@
   .top-header-nav {
     padding-right: 113px;
   }
+  .top-header-nav .top-nav {
+    display: none;
+  }
   .main-header {
     padding-left: 113px;
   }
+  .main-header .email-item {
+    display: none;
+  }
   .nav-area {
     padding: 0px 98px;
+  }
+}
+@media (max-width: 991px) {
+  .top-header {
+    display: none;
+  }
+  .main-header {
+    display: none;
+  }
+  .nav-area {
+    display: none;
   }
 }
 /*============ banner section start ============= */
