@@ -71,3 +71,18 @@
         }
     }
 }
+@media (max-width: 575px) { 
+    .footer {
+        .footer-logo {
+            text-align: center;
+            .footer-logo-social {
+                justify-content: center;
+            }
+        }
+        .justify-content-end {
+            justify-content: center!important;
+        }
+    }
+    
+}
+

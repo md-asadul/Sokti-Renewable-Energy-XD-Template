@@ -100,6 +100,9 @@
                 margin: 78px 0px 46px;
                 .content-img {
                     flex-basis: 100%;
+                    @media (max-width: 991px) { 
+                        margin-bottom: 30px;
+                    }
                 }
                 .content-right { 
                     h4 {
@@ -201,21 +204,24 @@
 /*============ pagination section start ============= */
 #pagination-area {
 	margin-bottom: 115px;
-	margin-top: -19px;
-    .page-item{
-        padding-right: 10px;
-        .page-link {
-            color: #777777;
-            font-size: 16px;
-            font-weight: 500;
-            border: 1px solid #E9F0FE;
-            border-radius: 5px;
-            &:hover {
-                color: $white;
-                background: $primaryColor;
-            }
-            &:focus{
-                box-shadow: none;
+	margin-top: 30px;
+    .pagination {
+        flex-wrap: wrap;
+        .page-item{
+            padding-right: 10px;
+            .page-link {
+                color: #777777;
+                font-size: 16px;
+                font-weight: 500;
+                border: 1px solid #E9F0FE;
+                border-radius: 5px;
+                &:hover {
+                    color: $white;
+                    background: $primaryColor;
+                }
+                &:focus{
+                    box-shadow: none;
+                }
             }
         }
     }
@@ -224,6 +230,9 @@
 /*============ blog sidebar section start ============= */
 .blog-post-sidebar {
 	margin-left: 39px;
+    @media (max-width: 767px) { 
+        margin-left: 0;
+    }
     .title-border {
         h4 {
             position: relative;
@@ -266,6 +275,7 @@
             .recent-post-img {
                 flex-basis: 26%;
                 width: 76px;
+                height: 74px;
                 border-radius: 8px;
                 overflow: hidden;
                 img {
@@ -284,6 +294,14 @@
                     margin-top: 5px;
                 }
             }
+            // @media (max-width: 991px) { 
+            //     .recent-post-img {
+            //         flex-basis: 40%;
+            //     }
+            //     .recent-post-content {
+            //         flex-basis: 60%;
+            //     }
+            // }
         }
     }
     /*============ recent post section end ============= */
@@ -325,6 +343,13 @@
             }
             h2 {
                 @include font_style(48px, $white, $bold, 63px);
+                @media (max-width: 991px) { 
+                    font-size: 30px;
+                    line-height: 43px;
+                    span {
+                      font-size: 20px;
+                   }
+                }
             }
             h4 {
                 text-transform: uppercase;

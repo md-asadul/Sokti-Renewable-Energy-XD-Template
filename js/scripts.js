@@ -37,7 +37,7 @@ $(document).ready(function(){
 /*second owlCarousel area*/
 $(document).ready(function(){
     
-    $("#project-area .owl-carousel").owlCarousel({
+    $(".project .owl-carousel").owlCarousel({
         loop: true,
         dots: false,
         margin: 15,

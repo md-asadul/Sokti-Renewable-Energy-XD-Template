@@ -339,71 +339,92 @@
 }
 /*============ pricing section end ============= */
 /*============ project section start ============= */
-#project-area {
+.project {
 	padding-top: 130px;
-    .project-done {
-        background: url(../images/energy01.jpg) no-repeat center center / cover ;
-        .project-wrapper {
-            padding: 40px;
-            .content {
-                background: rgba($black, 0.8);
-                padding: 40px;
-                text-align: center;
-                .content-wrapper {
-                    padding: 20px;
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        &-done {
+            width: calc(30% - 15px);
+            background: url(../images/energy01.jpg) no-repeat center center / cover ;
+            position: relative;
+            .project-done-inner {
+                position: absolute;
+                top: 40px;
+                left: 40px;
+                bottom: 40px;
+                right: 40px;
+                background: rgba($black, 0.9);
+                .content {
+                    text-align: center;
                     border: 1px solid $white;
-                }
-                .text {
-                    @include font_style(107px, $white, $bold, 143px);
-                    padding-top: 272px;
-                }
-                h3 {
-                    color: $primaryColor;
-                    letter-spacing: 5px;
-                    text-transform: uppercase;
-                }
-                a {
-                    padding: 17px 30px;
-                    border-radius: 5px;
-                    background: $primaryColor;
-                    display: inline-block;
-                    text-transform: uppercase;
-                    margin: 77px 0 42px;
-                    @include font_style (18px, $white, $bold, 24px);
-               }
-            }
-        }
-    }
-    .item {
-        height: 544px;
-        overflow: hidden;
-        border-radius: 15px;
-        position: relative;
-        transition: .3s;
-        img {
-            height: 100%;
-            object-fit: cover;
-        }
-        .overlay {
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-            left: 0;
-            opacity: 0;
-            background: rgba($black, 0.8);
-            .overlay-content {
-                padding: 50px;
-                h3 {
-                    color: $white;
-                }
-                p {
-                    color: $primaryColor;
+                    position: absolute;
+                    top: 40px;
+                    left: 40px;
+                    bottom: 40px;
+                    right: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    .content-wrapper {
+                        padding: 10px;
+                        .text {
+                            @include font_style(107px, $white, $bold, 143px);
+                            span {
+                                font-size: 70px;
+                            }
+                        }
+                        h3 {
+                            color: $primaryColor;
+                            letter-spacing: 5px;
+                            text-transform: uppercase;
+                        }
+                        a {
+                            padding: 17px 30px;
+                            border-radius: 5px;
+                            background: $primaryColor;
+                            display: inline-block;
+                            text-transform: uppercase;
+                            margin: 77px 0 43px;
+                            @include font_style (18px, $white, $bold, 24px);
+                       }
+                    }
                 }
             }
         }
-        &:hover {
-            .overlay {
-                opacity: 1; 
+        &-content {
+            width: calc(70% - 15px);
+            .item {
+                overflow: hidden;
+                border-radius: 15px;
+                position: relative;
+                transition: .3s;
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .overlay {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    opacity: 0;
+                    background: rgba($black, 0.8);
+                    .overlay-content {
+                        padding: 20px;
+                        h3 {
+                            color: $white;
+                        }
+                        p {
+                            color: $primaryColor;
+                        }
+                    }
+                }
+                &:hover {
+                    .overlay {
+                        opacity: 1; 
+                    }
+                }
             }
         }
     }
@@ -448,24 +469,29 @@
 /*============ energy section start ============= */
 .energy {
 	padding: 120px 0;
-    &-icon {
-        margin-top: -73px;
-        margin-left: 246px;
-        // position: absolute;
-        // left: 0;
-        // bottom: 0;
-        i {
-            background: $primaryColor;
-            color: $white;
-            height: 110px;
-            width: 110px;
-            line-height: 110px;
-            font-size: 30px;
-            text-align: center;
-            border-radius: 100%;
-            cursor: pointer;
+    .energy-img  {
+        position: relative;
+        width: 457px;
+        height: 428px;
+        .energy-icon {
+            position: absolute;
+            right: 92px;
+            bottom: -36px;
+            i {
+                background: $primaryColor;
+                color: $white;
+                height: 110px;
+                width: 110px;
+                line-height: 110px;
+                font-size: 30px;
+                text-align: center;
+                border-radius: 100%;
+                cursor: pointer;
+            }
         }
+
     }
+    
     &-controlling {
         padding-left: 45px;
         &-content {
@@ -871,6 +897,82 @@
     }
 }
 /*============ map section end ============= */
+/*============ responsive section ============= */
+@media (max-width: 1600px) { 
+    .project {
+        .project-wrapper {
+            .project-wrapper-done {
+                .content-wrapper {
+                    .text {
+                        @include font_style(70px, $white, $bold, 103px);
+                        span {
+                            font-size: 50px;
+                        }
+                    } 
+                    h3 {
+                        font-size: 20px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1400px) { 
+    .project {
+        .project-wrapper {
+            .project-wrapper-done {
+                .content-wrapper {
+                    .text {
+                        @include font_style(70px, $white, $bold, 103px);
+                        span {
+                            font-size: 50px;
+                        }
+                    } 
+                    h3 {
+                        font-size: 20px;
+                    }
+                    a {
+                        margin: 40px 0 43px;
+                        @include font_style (16px, $white, $bold, 24px);
+                   }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1200px) { 
+    .project {
+        .project-wrapper {
+            flex-direction: column-reverse;
+            .project-wrapper-done {
+               display: none;
+            }
+            .project-wrapper-content {
+                width: 100%;
+            }
+        }
+    }
+    .energy {
+        .energy-img  {
+            position: relative;
+            width: 357px;
+            height: 328px;
+            .energy-icon {
+                position: absolute;
+                right: 73px;
+                bottom: -34px;
+                i {
+                    height: 85px;
+                    width: 85px;
+                    line-height: 85px;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    
+}
 @media (max-width: 991px) { 
     .provider-area {
         .happy-customer {
@@ -898,6 +1000,28 @@
         }
         .tick {
             margin-left: 20px !important;
+        }
+    }
+    .energy {
+        .energy-img  {
+            position: relative;
+            width: 357px;
+            height: 328px;
+            .energy-icon {
+                position: absolute;
+                right: 73px;
+                bottom: -34px;
+                i {
+                    height: 85px;
+                    width: 85px;
+                    line-height: 85px;
+                    font-size: 25px;
+                }
+            }
+        }
+        .energy-controlling {
+            padding-left: 0 !important;
+            margin-top: 100px;
         }
     }
     .team {
